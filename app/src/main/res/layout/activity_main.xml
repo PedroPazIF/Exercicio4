@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtView"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_margin="16dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Texto"/>
+
+    <EditText
+        android:id="@+id/edtTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tamanho da letra"
+        android:layout_margin="16dp"/>
+
+            <SeekBar
+                android:id="@+id/skbTamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:max="80"/>
+            <TextView
+                android:id="@+id/txtTamanho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16sp"/>
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_gravity="right"
+        android:text="Enviar"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estilo"
+        android:layout_margin="8dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+
+                <CheckBox
+                    android:id="@+id/chkNegrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Negrito"/>
+
+                <CheckBox
+                    android:id="@+id/chkItalico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Italico"/>
+
+                <CheckBox
+                    android:id="@+id/chkMaiuscula"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Maiusculo"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/txtCorDaLetra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cor da Letra"/>
+
+
+    <RadioGroup
+       android:id="@+id/rdgCor"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_margin="16dp">
+
+
+                <RadioButton
+                    android:textColor="@color/red"
+                    android:id="@+id/rdbVermelho"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vermelho" />
+
+                <RadioButton
+                    android:textColor="@color/green"
+                    android:id="@+id/rdbVerde"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verde"/>
+
+                <RadioButton
+                    android:textColor="@color/blue"
+                    android:id="@+id/rdbAzul"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Azul"/>
+
+    </RadioGroup>
+
+</LinearLayout>
